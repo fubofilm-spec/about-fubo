@@ -1,0 +1,197 @@
+[
+  {
+    "order": 1,
+    "title": "字节跳动2027校招《下一件事》",
+    "client": "字节跳动",
+    "year": "2026",
+    "duration": "02:03",
+    "type": "品牌 / 剧情短片",
+    "tech": [
+      "AIGC生成"
+    ],
+    "industry": [
+      "互联网/软件"
+    ],
+    "cover": "assets/covers/01.jpg",
+    "record_id": "recvvG3brKDWSa"
+  },
+  {
+    "order": 2,
+    "title": "理想汽车《超级李想的一天》",
+    "client": "理想汽车",
+    "year": "2026",
+    "duration": "04:21",
+    "type": "品牌 / 剧情短片",
+    "tech": [
+      "AIGC生成"
+    ],
+    "industry": [
+      "汽车"
+    ],
+    "cover": "assets/covers/02.jpg",
+    "record_id": "recvvG3brKQ7Dm"
+  },
+  {
+    "order": 3,
+    "title": "Seedance 1.5 Pro 官方宣传片",
+    "client": "字节跳动",
+    "year": null,
+    "duration": "01:17",
+    "type": "产品广告 / 展示",
+    "tech": [
+      "AIGC生成",
+      "后期剪辑"
+    ],
+    "industry": [
+      "互联网/软件"
+    ],
+    "cover": "assets/covers/03.jpg",
+    "record_id": "recvvG3brKJ8L0"
+  },
+  {
+    "order": 4,
+    "title": "OPPO Find X9s Pro《乘风青》",
+    "client": "OPPO",
+    "year": "2026",
+    "duration": "00:20",
+    "type": "产品广告 / 展示",
+    "tech": [
+      "AIGC生成"
+    ],
+    "industry": [
+      "电子3C"
+    ],
+    "cover": "assets/covers/04.jpg",
+    "record_id": "recvvG3brKmlXV"
+  },
+  {
+    "order": 5,
+    "title": "北京卫视 2026 跨年《本喵的京城寻宝记》",
+    "client": "北京卫视",
+    "year": null,
+    "duration": "02:12",
+    "type": "产品广告 / 展示",
+    "tech": [
+      "AIGC生成",
+      "后期剪辑"
+    ],
+    "industry": [
+      "艺术文娱"
+    ],
+    "cover": "assets/covers/05.jpg",
+    "record_id": "recvvG3brK19lq"
+  },
+  {
+    "order": 6,
+    "title": "大疆 DJI ROMO 扫地机器人 × 影视飓风",
+    "client": "大疆 DJI / 影视飓风",
+    "year": "2025",
+    "duration": "03:53",
+    "type": "产品广告 / 展示",
+    "tech": [
+      "实拍",
+      "后期剪辑"
+    ],
+    "industry": [
+      "电子3C"
+    ],
+    "cover": "assets/covers/06.jpg",
+    "record_id": "recvvG3brKVEZ3"
+  },
+  {
+    "order": 7,
+    "title": "HUAWEI Pura X 产品视频",
+    "client": "华为 HUAWEI",
+    "year": "2025",
+    "duration": "00:36",
+    "type": "产品广告 / 展示",
+    "tech": [
+      "实拍",
+      "后期剪辑"
+    ],
+    "industry": [
+      "电子3C"
+    ],
+    "cover": "assets/covers/07.jpg",
+    "record_id": "recvvG3brKsj6E"
+  },
+  {
+    "order": 8,
+    "title": "大疆 DJI Inspire 3《HEROIC LONG TAKE》",
+    "client": "大疆 DJI",
+    "year": "2023",
+    "duration": "01:50",
+    "type": "产品广告 / 展示",
+    "tech": [
+      "实拍",
+      "后期剪辑"
+    ],
+    "industry": [
+      "电子3C"
+    ],
+    "cover": "assets/covers/08.jpg",
+    "record_id": "recvvG3brKuDD2"
+  },
+  {
+    "order": 9,
+    "title": "Dior×迪丽热巴《节日奇遇记》",
+    "client": "Dior",
+    "year": "2024",
+    "duration": "01:56",
+    "type": "产品广告 / 展示",
+    "tech": [
+      "实拍",
+      "后期剪辑"
+    ],
+    "industry": null,
+    "cover": "assets/covers/09.jpg",
+    "record_id": "recvvG3brK6veh"
+  },
+  {
+    "order": 10,
+    "title": "OPPO Find N 创意三维视频",
+    "client": "OPPO",
+    "year": "2022",
+    "duration": "01:21",
+    "type": "产品广告 / 展示",
+    "tech": null,
+    "industry": [
+      "电子3C"
+    ],
+    "cover": "assets/covers/10.jpg",
+    "record_id": "recvvG3brKoMLU"
+  },
+  {
+    "order": 11,
+    "title": "英特尔×马赛克乐队《霓虹甜心》MV",
+    "client": "英特尔 Intel",
+    "year": "2023",
+    "duration": "02:45",
+    "type": "音乐 / MV",
+    "tech": [
+      "实拍",
+      "后期剪辑"
+    ],
+    "industry": [
+      "艺术文娱"
+    ],
+    "cover": "assets/covers/11.jpg",
+    "record_id": "recvvG3brKpkoK"
+  },
+  {
+    "order": 12,
+    "title": "OPPO Reno 开场片｜亚洲版 / 全球版",
+    "client": "OPPO",
+    "year": "2026",
+    "duration": "00:34",
+    "type": "发布会 / 开场",
+    "tech": [
+      "AIGC生成"
+    ],
+    "industry": [
+      "电子3C"
+    ],
+    "cover": "assets/covers/12.jpg",
+    "record_id": "recvvG3brKfQln"
+  }
+]

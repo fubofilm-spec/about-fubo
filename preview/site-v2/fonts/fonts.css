@@ -1,0 +1,18 @@
+/* Noto Sans SC 400 and 500, subset to characters used on this page.
+   SIL Open Font License 1.1. See OFL-NotoSansSC.txt.
+   Upstream: Google Noto via the OFL simplified-Chinese build.
+*/
+@font-face {
+  font-family: "Noto Sans SC";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("files/noto-sans-sc-400-subset.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Noto Sans SC";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("files/noto-sans-sc-500-subset.woff2") format("woff2");
+}

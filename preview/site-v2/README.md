@@ -2,6 +2,8 @@
 
 这是给审核看的本地结构预览，不是 [www.fubofilm.cn](https://www.fubofilm.cn)，也还没有与最新个人简介同步。
 
+当前页面不是视觉定稿。此前一份排版建议来自网页版 GPT-6 Astra，不是用户指定的 Claude。Claude 的独立建议还没回来，栏目顺序、配色、栅格和字体角色都先保持原样，等那份全文再校正。这一步只做了可撤回的基础整理：创始人与团队约 30 人按已确认事实书写；来源差异和待补说明改放在 [NOTES.md](NOTES.md)；Noto Sans SC / Noto Serif SC 改为本目录自托管，许可在 `fonts/OFL-NotoSansSC.txt` 与 `fonts/OFL-NotoSerifSC.txt`。页面不再请求 Google Fonts。
+
 预览放在 `preview/site-v2/`，不改 `docs/`。GitHub Pages 只从 `main` 的 `/docs` 发布，因此这些文件即使日后被合进 `main`，也不会替换现在的 GitHub Pages 页面，更不会改到 fubofilm.cn。本轮不合并、不推 `main`、不加发布流程。
 
 ## 怎么打开

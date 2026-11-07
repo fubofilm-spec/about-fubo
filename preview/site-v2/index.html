@@ -16,8 +16,10 @@
 <a class="skip" href="#intro">跳到介绍</a>
 <header class="top">
   <a class="top-name" href="#intro">傅博</a>
+  <p class="top-current" aria-live="polite"></p>
   <button class="menu" type="button" aria-expanded="false" aria-controls="rail">目录</button>
 </header>
+<button class="scrim" type="button" hidden>关闭目录</button>
 <div class="shell">
   <aside class="rail" id="rail">
     <button class="rail-close" type="button">关闭</button>
@@ -50,22 +52,17 @@
           <p class="idx">01 — Intro</p>
           <h1>傅博</h1>
           <p class="latin">Fubo</p>
-          <p class="identity">导演 / 摄影指导 / AI 创作者</p>
-          <p class="identity sub">三不五时 SOMEWHILE 创始人，团队约 30 人 · VGENT 创始人 · FOPTIC 创始人兼设计师</p>
+          <p class="identity"><span>导演</span><span>摄影指导</span><span>AI 创作者</span></p>
+          <p class="identity sub"><span>三不五时 SOMEWHILE 创始人，团队约 30 人</span><span>VGENT 创始人</span><span>FOPTIC 创始人兼设计师</span></p>
         </div>
         <div class="lede-slot">
           <p class="lede">广告导演，电影摄影师，VGENT 创始人 / AI 影像导演，自研镜头品牌 FOPTIC 创始人兼设计师。</p>
         </div>
         </div>
         <figure class="portrait" data-zoom>
-          <img src="media/from-fubofilm/editorial/story-portrait.webp" alt="傅博肖像" width="1352" height="1336">
+          <img src="media/from-fubofilm/editorial/story-portrait.webp" alt="傅博肖像" width="1352" height="1336" fetchpriority="high" decoding="async">
           <figcaption class="caption">现网公开肖像</figcaption>
         </figure>
-        <div class="hero-more prose">
-          <p>导演剧情短片《黑面》获 2016 海峡两岸大学生微电影节最佳影片、美国南卡罗莱纳电影节最佳学生短片；科幻短片《星旅人》获 2020 ISTANBUL FILM AWARDS 科幻单元最佳影片，并入选上海国际电影节短视频单元推荐作品。</p>
-          <p>毕业于北京电影学院摄影专业，曾任电影《最后一列绿皮火车》、网剧《大侠卢小鱼》摄影指导；近年工作延伸至 VGENT AI 影像系统、tier-1 品牌影像项目与 FOPTIC 光学研发。</p>
-          <p>三不五时是一家以导演与影像创作为核心、以 AIGC 和自研工具拓展制作方式的创意制作工作室。傅博是创始人，团队约 30 人。</p>
-        </div>
       </header>
 
       <section class="section" id="commercial">
@@ -74,21 +71,28 @@
             <p class="idx">02 — Commercial</p>
             <h2>商业作品</h2>
           </div>
-          <div class="tools">
-            <div class="switch" role="group" aria-label="显示方式">
-              <button type="button" data-view="grid" aria-pressed="true">图</button>
-              <button type="button" data-view="list">列表</button>
-            </div>
-            <div class="switch" role="group" aria-label="按已有技术手段筛选">
-              <button type="button" data-filter="all" aria-pressed="true">全部</button>
-              <button type="button" data-filter="live">实拍</button>
-              <button type="button" data-filter="aigc">AIGC</button>
-            </div>
-          </div>
         </div>
         <div class="prose">
           <p>近年的商业工作主要分布在互联网 3C、汽车、消费品。这里放已经有封面的公开作品。</p>
         </div>
+        <div class="controls">
+          <div class="control">
+            <span class="control-name" id="view-label">显示</span>
+            <div class="segment" role="group" aria-labelledby="view-label">
+              <button type="button" data-view="grid" aria-pressed="true">图</button>
+              <button type="button" data-view="list">列表</button>
+            </div>
+          </div>
+          <div class="control">
+            <span class="control-name" id="type-label">手段</span>
+            <div class="filters" role="group" aria-labelledby="type-label">
+              <button type="button" data-filter="all" aria-pressed="true">全部 <span data-count="all"></span></button>
+              <button type="button" data-filter="live">实拍 <span data-count="live"></span></button>
+              <button type="button" data-filter="aigc">AIGC <span data-count="aigc"></span></button>
+            </div>
+          </div>
+        </div>
+        <p class="filter-live" aria-live="polite"></p>
         <div class="feature sheet" id="commercial-feature">
           <article class="work" data-kind="aigc">
             <img src="media/covers/01.jpg" alt="字节跳动2027校招《下一件事》精选封面" width="1200" height="675">
@@ -101,6 +105,13 @@
             <p class="meta">2026 · 理想汽车 · 04:21 · 品牌 / 剧情短片 · AIGC生成</p>
           </article>
         </div>
+        <div class="hero-more prose" id="about-rest">
+          <h2 class="about-title">关于傅博</h2>
+          <p>导演剧情短片《黑面》获 2016 海峡两岸大学生微电影节最佳影片、美国南卡罗莱纳电影节最佳学生短片；科幻短片《星旅人》获 2020 ISTANBUL FILM AWARDS 科幻单元最佳影片，并入选上海国际电影节短视频单元推荐作品。</p>
+          <p>毕业于北京电影学院摄影专业，曾任电影《最后一列绿皮火车》、网剧《大侠卢小鱼》摄影指导；近年工作延伸至 VGENT AI 影像系统、tier-1 品牌影像项目与 FOPTIC 光学研发。</p>
+          <p>三不五时是一家以导演与影像创作为核心、以 AIGC 和自研工具拓展制作方式的创意制作工作室。傅博是创始人，团队约 30 人。</p>
+        </div>
+        <p class="unmarked" hidden></p>
         <div class="works sheet" id="commercial-sheet">
           <article class="work" data-kind="live">
             <img src="media/covers/06.jpg" alt="大疆 DJI ROMO 扫地机器人 × 影视飓风精选封面" width="1200" height="675" loading="lazy">
@@ -137,8 +148,11 @@
             <h3>OPPO Find N 创意三维视频</h3>
             <p class="meta">2022 · OPPO · 01:21</p>
           </article>
-          <article class="work" data-kind="aigc">
-            <img src="media/covers/05.jpg" alt="北京卫视 2026 跨年《本喵的京城寻宝记》精选封面" width="1200" height="675" loading="lazy">
+          <article class="work" id="work-benmao" data-kind="aigc">
+            <button type="button" class="cover-play" data-bvid="BV17YiTB6EV4" data-page="https://www.bilibili.com/video/BV17YiTB6EV4" data-label="北京卫视 2026 跨年《本喵的京城寻宝记》">
+              <img src="media/covers/05.jpg" alt="北京卫视 2026 跨年《本喵的京城寻宝记》精选封面" width="1200" height="675" loading="lazy" decoding="async">
+              <span class="play-tag">播放</span>
+            </button>
             <h3>北京卫视 2026 跨年《本喵的京城寻宝记》</h3>
             <p class="meta">北京卫视 · 02:12 · AIGC生成、后期剪辑</p>
             <a class="ext" href="https://www.bilibili.com/video/BV17YiTB6EV4" target="_blank" rel="noopener noreferrer">B 站</a>
@@ -248,7 +262,7 @@
           <div class="prose">
             <p>对外工具品牌用 VGENT。它把导演、摄影指导和画面判断整理进一条可复用的工作流，不是这整座网站的身份。</p>
             <p>VGENT｜知识驱动的影像创作工具。出品是 SOMEWHILE 三不五时。</p>
-            <p><a class="ext" href="https://www.bilibili.com/video/BV1bfhJ6pERS" target="_blank" rel="noopener noreferrer">VGENT Knowledge MCP</a></p>
+            <p><button type="button" class="text-play" data-bvid="BV1bfhJ6pERS" data-page="https://www.bilibili.com/video/BV1bfhJ6pERS" data-label="VGENT Knowledge MCP">播放 VGENT Knowledge MCP</button> <a class="ext" href="https://www.bilibili.com/video/BV1bfhJ6pERS" target="_blank" rel="noopener noreferrer">B 站</a></p>
             <p><a class="ext" href="https://vgent.somewhile.cn" target="_blank" rel="noopener noreferrer">vgent.somewhile.cn</a></p>
           </div>
           <figure class="work">
@@ -371,15 +385,25 @@
     </div>
   </div>
 </div>
-<div class="lightbox" hidden>
-  <button class="lb-close" type="button">关闭</button>
-  <button class="lb-prev" type="button" aria-label="上一张">‹</button>
+<dialog id="viewer" class="viewer" aria-label="查看图片">
+  <button class="viewer-close" type="button">关闭</button>
+  <button class="viewer-prev" type="button" aria-label="上一张">上一张</button>
   <figure>
     <img alt="">
     <figcaption></figcaption>
+    <p class="viewer-count"></p>
   </figure>
-  <button class="lb-next" type="button" aria-label="下一张">›</button>
-</div>
+  <button class="viewer-next" type="button" aria-label="下一张">下一张</button>
+</dialog>
+<dialog id="player" class="player" aria-label="播放视频">
+  <div class="player-stage">
+    <img class="player-poster" alt="">
+    <div class="player-slot"></div>
+  </div>
+  <p class="player-note">不会自动播放。若这里没有出现播放器，使用下面的原链接。</p>
+  <p><a class="player-open ext" href="" target="_blank" rel="noopener noreferrer">在 B 站打开</a></p>
+  <button class="player-close" type="button">关闭视频</button>
+</dialog>
 <script src="site.js"></script>
 </body>
 </html>

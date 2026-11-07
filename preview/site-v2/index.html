@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>傅博 · 结构预览 — 未上线</title>
+<meta name="description" content="傅博 / 三不五时 SOMEWHILE 个人站结构预览。文案尚未与最新简介同步，不是 fubofilm.cn 现站。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Noto+Serif+SC:wght@500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#14110f;
+  --bg-2:#1d1916;
+  --ink:#f3eee7;
+  --muted:#c4bab0;
+  --dim:#8d847b;
+  --clay:#e07a52;
+  --sea:#9ec3d1;
+  --line:rgba(243,238,231,.14);
+  --serif:"Noto Serif SC","Songti SC","Source Han Serif SC",serif;
+  --sans:"Noto Sans SC","PingFang SC","Source Han Sans SC",sans-serif;
+  --rail:232px;
+  --max:1120px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  background:
+    radial-gradient(880px 520px at 110% -8%, rgba(158,195,209,.16), transparent 58%),
+    radial-gradient(720px 480px at -12% 8%, rgba(224,122,82,.13), transparent 52%),
+    var(--bg);
+  color:var(--ink);
+  font-family:var(--sans);
+  font-size:16px;
+  font-weight:400;
+  line-height:1.75;
+  text-rendering:optimizeLegibility;
+}
+body.lock{overflow:hidden}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+button,a{ -webkit-tap-highlight-color:transparent}
+.skip{
+  position:absolute;left:12px;top:0;transform:translateY(-150%);
+  background:var(--ink);color:var(--bg);
+  padding:8px 12px;z-index:80;
+}
+.skip:focus{transform:none}
+.shell{display:grid;grid-template-columns:var(--rail) minmax(0,1fr);min-height:100vh}
+.rail{
+  position:sticky;top:0;align-self:start;height:100vh;
+  padding:28px 22px 24px;
+  display:flex;flex-direction:column;gap:22px;
+  border-right:1px solid var(--line);
+  background:rgba(20,17,15,.92);
+  backdrop-filter:blur(10px);
+}
+.brand{text-decoration:none}
+.brand strong{
+  display:block;font-family:var(--serif);font-size:28px;font-weight:500;letter-spacing:.08em;
+}
+.brand em{display:block;font-style:normal;color:var(--clay);letter-spacing:.28em;font-size:13px;margin-top:4px}
+.rail nav{display:flex;flex-direction:column;gap:2px}
+.rail a{
+  text-decoration:none;color:var(--muted);font-size:14px;padding:8px 0;
+  border-bottom:1px solid transparent;
+}
+.rail a:hover,.rail a:focus-visible{color:var(--ink)}
+.rail-foot{margin-top:auto;color:var(--dim);font-size:12px;letter-spacing:.08em;line-height:1.6}
+.rail-close{display:none}
+.menu{
+  display:none;width:100%;border:0;background:#1a1613;color:var(--ink);
+  min-height:52px;padding:0 18px;font:inherit;letter-spacing:.12em;text-align:left;
+  border-bottom:1px solid var(--line);position:sticky;top:0;z-index:30;
+}
+.main{min-width:0}
+.wrap{max-width:var(--max);margin:0 auto;padding:28px 40px 88px}
+.banner{
+  display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
+  border:1px solid rgba(224,122,82,.45);
+  background:rgba(224,122,82,.08);
+  padding:12px 14px;margin-bottom:36px;
+  font-size:13px;letter-spacing:.04em;color:var(--muted);
+}
+.banner strong{color:var(--clay);font-weight:500}
+.hero{
+  display:grid;
+  grid-template-columns:minmax(0,1.15fr) minmax(260px,.8fr);
+  grid-template-areas:"title photo" "copy photo";
+  column-gap:40px;row-gap:18px;align-items:start;
+}
+.hero-title{grid-area:title}
+.hero-copy{grid-area:copy}
+.portrait{grid-area:photo;margin:0}
+section,header.hero{scroll-margin-top:24px}
+.kicker{margin:0 0 14px;color:var(--clay);font-size:12px;letter-spacing:.22em}
+h1{margin:0;font-family:var(--serif);font-weight:500;font-size:clamp(72px,9vw,120px);line-height:.9;letter-spacing:-.04em}
+.hero-en{margin:10px 0 0;font-family:var(--serif);font-size:clamp(22px,3vw,34px);font-weight:500;color:var(--sea)}
+.lede{font-size:18px;max-width:38em;color:var(--ink)}
+.roles{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0;padding:0;list-style:none}
+.roles li{border:1px solid var(--line);padding:6px 10px;font-size:13px;letter-spacing:.06em;color:var(--muted)}
+.portrait img{width:100%;height:auto;filter:grayscale(1) contrast(1.04)}
+.caption{margin-top:8px;color:var(--dim);font-size:12px;letter-spacing:.04em}
+.src{margin:8px 0 0;color:var(--dim);font-size:12px}
+.note{color:var(--muted);font-size:14px}
+section{padding:64px 0;border-top:1px solid var(--line);margin-top:28px}
+h2{margin:0 0 12px;font-family:var(--serif);font-weight:500;font-size:clamp(32px,4vw,48px);line-height:1.15}
+h3{margin:0;font-family:var(--serif);font-weight:500;font-size:22px;line-height:1.35}
+p{margin:0 0 12px}
+.works{display:grid;grid-template-columns:1fr 1fr;gap:28px 18px;margin-top:28px}
+.work{margin:0}
+.work img{width:100%;background:#0c0b0a}
+.work h3{margin-top:12px}
+.meta{color:var(--dim);font-size:13px;margin-top:4px}
+.tag{display:inline-block;margin-top:8px;color:var(--sea);font-size:12px;letter-spacing:.08em}
+.wait{
+  margin-top:28px;padding:16px 18px;
+  border:1px dashed rgba(158,195,209,.5);
+  background:rgba(158,195,209,.06);
+}
+.wait h3{font-family:var(--sans);font-size:13px;letter-spacing:.16em;color:var(--sea);font-weight:500;margin-bottom:8px}
+.wait ul{margin:0;padding-left:18px;color:var(--muted)}
+.wait li{margin:6px 0}
+.awards{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:8px}
+.award{border-top:1px solid var(--line);padding-top:14px}
+.award ul{margin:8px 0 0;padding-left:18px;color:var(--muted)}
+.quote{
+  margin:8px 0 22px;padding:0;border:0;
+  font-family:var(--serif);font-size:clamp(26px,3vw,36px);line-height:1.45;font-weight:500;
+}
+.photos{columns:2;column-gap:16px;margin-top:12px}
+.photos figure{break-inside:avoid;margin:0 0 16px}
+.lens{display:grid;grid-template-columns:1.35fr 1fr 1fr;gap:12px;margin-top:18px}
+.lens figure{margin:0}
+.lens figure:first-child{grid-column:1 / -1}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 0;padding:0;list-style:none}
+.chips li{background:var(--bg-2);padding:8px 12px;font-size:14px}
+.split{display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:start}
+.panel{
+  background:var(--bg-2);border:1px solid var(--line);padding:22px;
+}
+.panel a{color:var(--sea)}
+.doors{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px}
+.door{display:flex;flex-direction:column;gap:8px;min-height:180px;text-decoration:none;background:var(--bg-2);border:1px solid var(--line);padding:18px}
+.door:hover{border-color:rgba(224,122,82,.7)}
+.door strong{font-family:var(--serif);font-size:22px;font-weight:500}
+.door span{color:var(--muted);font-size:14px}
+.actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+.button{
+  display:inline-flex;align-items:center;min-height:48px;padding:0 16px;
+  text-decoration:none;border:1px solid var(--clay);color:var(--bg);background:var(--clay);
+}
+.button.ghost{background:transparent;color:var(--ink);border-color:var(--line)}
+.media-grid{display:grid;grid-template-columns:.7fr 1.3fr;gap:16px;align-items:start;margin-top:16px}
+.media-grid .work img{width:100%;max-height:72vh;object-fit:contain;object-position:center top;background:#0c0b0a}
+.handles{margin:12px 0 0;padding:0;list-style:none;color:var(--muted)}
+.handles li{padding:6px 0;border-bottom:1px solid var(--line)}
+footer{color:var(--dim);font-size:13px;padding-bottom:12px}
+@media (max-width:900px){
+  .shell{grid-template-columns:1fr}
+  .menu{display:flex;align-items:center;justify-content:space-between}
+  .rail{display:none;height:auto;border-right:0}
+  section,header.hero{scroll-margin-top:64px}
+  .hero{grid-template-columns:1fr;grid-template-areas:"title" "photo" "copy"}
+  .rail.open{
+    display:flex;position:fixed;inset:0;z-index:40;height:100%;
+    background:#14110f;padding:22px 22px 32px;overflow:auto;
+  }
+  .rail-close{
+    display:inline-flex;align-self:flex-end;min-height:44px;padding:0 14px;
+    background:transparent;color:var(--ink);border:1px solid var(--line);font:inherit;
+  }
+  .rail nav a{font-size:20px;padding:12px 0}
+  .wrap{padding:18px 18px 64px}
+  .hero,.split,.awards,.works,.doors,.media-grid,.lens{grid-template-columns:1fr}
+  .lens figure:first-child{grid-column:auto}
+  .photos{columns:1}
+  h1{font-size:76px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#intro">跳到介绍</a>
+<button class="menu" type="button" aria-expanded="false" aria-controls="rail">目录 <span>傅博</span></button>
+<div class="shell">
+  <aside class="rail" id="rail">
+    <button class="rail-close" type="button">关闭</button>
+    <a class="brand" href="#intro"><strong>FUBO</strong><em>傅博</em></a>
+    <nav aria-label="页面章节">
+      <a href="#intro">介绍</a>
+      <a href="#commercial">商业作品</a>
+      <a href="#vgent">VGENT</a>
+      <a href="#dop">摄影指导</a>
+      <a href="#foptic">FOPTIC</a>
+      <a href="#home">故乡</a>
+      <a href="#media">自媒体</a>
+      <a href="#cases">完整案例</a>
+      <a href="#archive">档案</a>
+      <a href="#contact">联系</a>
+    </nav>
+    <p class="rail-foot">结构预览<br>未上线<br>文案未同步</p>
+  </aside>
+  <div class="main">
+    <div class="wrap">
+      <p class="banner"><strong>结构预览，尚未上线。</strong><span>不是 fubofilm.cn 现站。最新简介还没接入，本页不把旧档案或未核对数字写成最新内容。</span></p>
+
+      <header class="hero" id="intro">
+        <div class="hero-title">
+          <p class="kicker">DIRECTOR · DOP · AI CREATOR</p>
+          <h1>傅博</h1>
+          <p class="hero-en">FUBO · 三不五时 SOMEWHILE</p>
+          <ul class="roles">
+            <li>导演</li>
+            <li>摄影指导</li>
+            <li>AI 创作者</li>
+            <li>VGENT 创始人</li>
+            <li>FOPTIC 创始人兼设计师</li>
+            <li>团队约 30 人 · 待核对</li>
+          </ul>
+        </div>
+        <figure class="portrait">
+          <img src="media/from-fubofilm/editorial/story-portrait.webp" alt="傅博肖像，来自现网公开页" width="1352" height="1336">
+          <figcaption class="caption">现网公开肖像</figcaption>
+        </figure>
+        <div class="hero-copy">
+          <p class="lede">广告导演，电影摄影师，VGENT 创始人 / AI 影像导演，自研镜头品牌 FOPTIC 创始人兼设计师。</p>
+          <p>导演剧情短片《黑面》获 2016 海峡两岸大学生微电影节最佳影片、美国南卡罗莱纳电影节最佳学生短片；科幻短片《星旅人》获 2020 ISTANBUL FILM AWARDS 科幻单元最佳影片，并入选上海国际电影节短视频单元推荐作品。</p>
+          <p>毕业于北京电影学院摄影专业，曾任电影《最后一列绿皮火车》、网剧《大侠卢小鱼》摄影指导；近年工作延伸至 VGENT AI 影像系统、tier-1 品牌影像项目与 FOPTIC 光学研发。</p>
+          <p class="src">以上三段来自现网公开首页。现网另有标签「SOMEWHILE 合伙人」。本轮说明写的是创始人、团队约 30 人。两套说法先并列，等最新简介再定，不合成新头衔。</p>
+          <p>三不五时是一家以导演与影像创作为核心、以 AIGC 和自研工具拓展制作方式的创意制作工作室。</p>
+          <p class="src">工作室这一句来自本仓手册中标明可直接使用的段落，仍待最新简介替换。</p>
+        </div>
+      </header>
+
+      <section>
+        <h2>作者作品</h2>
+        <p>判断先从静帧和短片里长出来，再进入更大的片场。图片摄影、剧情短片与实验短片阶段，逐渐建立了对视觉、节奏、镜头、人物气质与色调的第一套判断。</p>
+        <div class="awards">
+          <article class="award">
+            <h3>剧情短片《黑面》</h3>
+            <ul>
+              <li>2016 海峡两岸大学生微电影节最佳影片</li>
+              <li>2015 美国南卡罗莱纳电影节最佳学生短片</li>
+              <li>2016 中国微电影文化节最佳短片</li>
+            </ul>
+          </article>
+          <article class="award">
+            <h3>科幻实验短片《星旅人》</h3>
+            <ul>
+              <li>第 23 届上海国际电影节短视频单元推荐作品</li>
+              <li>2020 ISTANBUL FILM AWARDS 科幻单元最佳影片</li>
+              <li>2020 Beijing Indie Short Film Festival 最佳实验影片提名</li>
+              <li>2020 无人之境短视频大赛特别提及奖</li>
+            </ul>
+          </article>
+        </div>
+        <p class="src">奖项目录按现网「静帧、短片与最早的奖项」原文列出。首页那一句没有单独写出南卡罗莱纳的 2015。两处都保留，不自行统一。</p>
+      </section>
+
+      <section id="commercial">
+        <p class="kicker">COMMERCIAL</p>
+        <h2>商业作品</h2>
+        <p>近年的商业工作在现网被分成互联网 3C、汽车、消费品。下面是本仓精选封面里已经有图的公开作品，加上封面文件上的索引字段。这不是完整名单。</p>
+        <p class="note">现网还写到 REDMI、Audi、BMW、BUICK、红旗、ZENITH、TOMMY HILFIGER。这些名字没有配进本预览的图，也不另写项目说明。追觅不在本版新增。</p>
+        <div class="works">
+          <figure class="work">
+            <img src="media/covers/01.jpg" alt="字节跳动2027校招《下一件事》精选封面" width="1200" height="675">
+            <h3>字节跳动2027校招《下一件事》</h3>
+            <p class="meta">字节跳动 · 2026 · 02:03 · 品牌 / 剧情短片 · AIGC生成</p>
+          </figure>
+          <figure class="work">
+            <img src="media/covers/02.jpg" alt="理想汽车《超级李想的一天》精选封面" width="1200" height="675">
+            <h3>理想汽车《超级李想的一天》</h3>
+            <p class="meta">理想汽车 · 2026 · 04:21 · 品牌 / 剧情短片 · AIGC生成</p>
+          </figure>
+          <figure class="work">
+            <img src="media/covers/06.jpg" alt="大疆 DJI ROMO 扫地机器人 × 影视飓风精选封面" width="1200" height="675">
+            <h3>大疆 DJI ROMO 扫地机器人 × 影视飓风</h3>
+            <p class="meta">大疆 DJI / 影视飓风 · 2025 · 03:53 · 实拍、后期剪辑</p>
+          </figure>
+          <figure class="work">
+            <img src="media/covers/07.jpg" alt="HUAWEI Pura X 产品视频精选封面" width="1200" height="675">
+            <h3>HUAWEI Pura X 产品视频</h3>
+            <p class="meta">华为 HUAWEI · 2025 · 00:36 · 实拍、后期剪辑</p>
+          </figure>
+          <figure class="work">
+            <img src="media/covers/08.jpg" alt="大疆 DJI Inspire 3《HEROIC LONG TAKE》精选封面" width="1200" height="675">
+            <h3>大疆 DJI Inspire 3《HEROIC LONG TAKE》</h3>
+            <p class="meta">大疆 DJI · 2023 · 01:50 · 实拍、后期剪辑</p>
+          </figure>
+          <figure class="work">
+            <img src="media/covers/09.jpg" alt="Dior×迪丽热巴《节日奇遇记》精选封面" width="1200" height="675">
+            <h3>Dior×迪丽热巴《节日奇遇记》</h3>
+            <p class="meta">Dior · 2024 · 01:56 · 实拍、后期剪辑</p>
+          </figure>
+          <figure class="work">
+            <img src="media/covers/04.jpg" alt="OPPO Find X9s Pro《乘风青》精选封面" width="1200" height="675">
+            <h3>OPPO Find X9s Pro《乘风青》</h3>
+            <p class="meta">OPPO · 2026 · 00:20 · AIGC生成</p>
+          </figure>
+          <figure class="work">
+            <img src="media/covers/12.jpg" alt="OPPO Reno 开场片精选封面" width="1200" height="675">
+            <h3>OPPO Reno 开场片｜亚洲版 / 全球版</h3>
+            <p class="meta">OPPO · 2026 · 00:34 · 发布会 / 开场 · AIGC生成</p>
+          </figure>
+          <figure class="work">
+            <img src="media/covers/10.jpg" alt="OPPO Find N 创意三维视频精选封面" width="1200" height="675">
+            <h3>OPPO Find N 创意三维视频</h3>
+            <p class="meta">OPPO · 2022 · 01:21 · 索引未填写技术手段</p>
+          </figure>
+          <figure class="work">
+            <img src="media/covers/05.jpg" alt="北京卫视 2026 跨年《本喵的京城寻宝记》精选封面" width="1200" height="675">
+            <h3>北京卫视 2026 跨年《本喵的京城寻宝记》</h3>
+            <p class="meta">北京卫视 · 索引未填年份 · 02:12 · AIGC生成、后期剪辑</p>
+            <a class="tag" href="https://www.bilibili.com/video/BV17YiTB6EV4" target="_blank" rel="noopener noreferrer">索引中的 B 站链接</a>
+          </figure>
+        </div>
+        <aside class="wait">
+          <h3>待对齐</h3>
+          <ul>
+            <li>商业全名单不使用现网「99 项目」口径。</li>
+            <li>简历口径「120 余支实拍、35 部 AIGC」等最新简介写入后再出现。本仓 2026-10-28 的 160 条快照与这组数不是同一套，两边都不作为本页成绩。</li>
+          </ul>
+        </aside>
+      </section>
+
+      <section id="vgent">
+        <p class="kicker">VGENT</p>
+        <h2>VGENT</h2>
+        <div class="split">
+          <div>
+            <p>对外工具品牌用 VGENT。它在现网的位置，是把导演、摄影指导和画面判断整理进一条可复用的工作流，而不是整站的唯一身份。</p>
+            <p>索引里有一条「VGENT｜知识驱动的影像创作工具」，客户写的是 SOMEWHILE 三不五时，在线观看为空。已确认要指向的片子不是现网 Founder Reel。</p>
+            <p><a href="https://www.bilibili.com/video/BV1bfhJ6pERS" target="_blank" rel="noopener noreferrer">VGENT Knowledge MCP 片 · bilibili.com/video/BV1bfhJ6pERS</a></p>
+            <p class="src">地址来自本轮已确认方向。片内介绍、时长和封面都还没有新的公开材料，这里不补写，也不嵌一个空播放器。</p>
+            <div class="actions">
+              <a class="button ghost" href="https://vgent.somewhile.cn" target="_blank" rel="noopener noreferrer">vgent.somewhile.cn</a>
+            </div>
+          </div>
+          <figure class="work">
+            <img src="media/covers/03.jpg" alt="Seedance 1.5 Pro 官方宣传片精选封面" width="1200" height="675">
+            <h3>Seedance 1.5 Pro 官方宣传片</h3>
+            <p class="meta">字节跳动 · 索引未填年份 · 01:17 · 产品广告 / 展示 · AIGC生成、后期剪辑</p>
+            <p class="caption">Seedance 是一条作品线，不是站点身份。2.0、2.5 和 REBOOT 见下方待对齐，不在这里铺开。</p>
+          </figure>
+        </div>
+        <aside class="wait">
+          <h3>待对齐 · 不写成已完成案例</h3>
+          <ul>
+            <li>Seedance 2.0：本仓索引未见独立条目。</li>
+            <li>Seedance 2.5：索引里有多条新加坡巡展和能力 Demo，没有本地封面。REBOOT 这个标题在索引里没见到。</li>
+            <li>FORCE 大会《我掉进周星驰的电影世界》：索引有 2026 和这个标题，客户为空，没有本地封面。</li>
+            <li>IDTALK｜数字人口播制作工具：索引有名称，并写了 https://idtalk.somevision.studio/ 。介绍未展开。</li>
+            <li>授课经历：当前材料里没有可引用的学校、年份或课程名。</li>
+            <li>空军招飞：现网页写 2019，另一份简介口径是 2020。年份待核对，本预览不写年份，也不放那组画面。</li>
+          </ul>
+        </aside>
+      </section>
+
+      <section id="dop">
+        <p class="kicker">DIRECTOR OF PHOTOGRAPHY</p>
+        <h2>摄影指导</h2>
+        <p>作为摄影指导，持续处理不同类型与体量的影像现场。电影、剧集、MV、时尚、人物与大场面，是现网对这一段的公开说法。</p>
+        <div class="split">
+          <div>
+            <article class="award">
+              <h3>现网公开署名</h3>
+              <ul>
+                <li>电影《最后一列绿皮火车》摄影指导</li>
+                <li>网剧《大侠卢小鱼》摄影指导</li>
+              </ul>
+            </article>
+            <p class="note">作品索引里另有「网剧《大侠卢小鱼》片头」，2020，01:07，类型写的是产品广告 / 展示。那是另一条记录，不在这里改写成摄影指导署名。</p>
+          </div>
+          <figure class="work">
+            <img src="media/covers/11.jpg" alt="英特尔×马赛克乐队《霓虹甜心》MV 精选封面" width="1200" height="675">
+            <h3>英特尔×马赛克乐队《霓虹甜心》MV</h3>
+            <p class="meta">英特尔 Intel · 2023 · 02:45 · 音乐 / MV · 实拍、后期剪辑</p>
+          </figure>
+        </div>
+        <aside class="wait">
+          <h3>待对齐</h3>
+          <ul>
+            <li>摄影指导完整片单等最新资料。不用现网案例库的旧计数代替。</li>
+          </ul>
+        </aside>
+      </section>
+
+      <section id="foptic">
+        <p class="kicker">FOPTIC</p>
+        <h2>FOPTIC</h2>
+        <p>出于对视觉效果的极致追求。2018 年开始电影镜头的研发和改装，创立 FOPTIC 品牌。从镜头语言、实拍经验到光学研发，FOPTIC 是影像工作延伸出来的另一条线索。</p>
+        <ul class="chips">
+          <li>60mm 微距 / 35mm 微距</li>
+          <li>8mm 鱼眼</li>
+          <li>65mm FOPTIC Vintage 镜头组</li>
+          <li>移轴接环 / 1.4 倍 APO 增倍镜</li>
+          <li>万花筒镜 / 双棱镜 / 屈光效果镜片组</li>
+        </ul>
+        <p class="src">产品名来自现网公开列表。现网另有一句「立志成为国内的 PANAVISION」。图片只有现网这四张，不把蓝图说成某一支未出示的镜头。</p>
+        <div class="lens">
+          <figure>
+            <img src="media/from-fubofilm/foptic/lens-real-60macro-side.webp" alt="FOPTIC 60 Macro 镜头实拍" width="1618" height="1080">
+            <figcaption class="caption">FOPTIC 60 Macro 镜头实拍</figcaption>
+          </figure>
+          <figure>
+            <img src="media/from-fubofilm/foptic/lens-blueprint-page.webp" alt="镜头蓝图" width="1716" height="1554">
+            <figcaption class="caption">镜头蓝图</figcaption>
+          </figure>
+          <figure>
+            <img src="media/from-fubofilm/foptic/lens-real-macro-silver-close.webp" alt="60 Macro 镜头实物" width="1080" height="1080">
+            <figcaption class="caption">60 Macro 镜头实物</figcaption>
+          </figure>
+          <figure>
+            <img src="media/from-fubofilm/foptic/lens-real-black-macro-close.webp" alt="镜头细节" width="1080" height="1080">
+            <figcaption class="caption">镜头细节</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section id="home">
+        <p class="kicker">MINNAN</p>
+        <h2>故乡</h2>
+        <blockquote class="quote">故乡的近处是红色的，不能种出庄稼，远处却是蓝色的，直临大海。</blockquote>
+        <p>我来自闽南，在赤土埔上成长。一切镜头判断，最早都从闽南这片红与蓝交界的土地上长出来。</p>
+        <p>乐队鼓手、专栏作家、图片库摄影师。贴过这些标签之后，我对蓝色的憧憬没有褪去，反而和这片土地绑得更深。我想像托纳托雷拍故乡那样，去拍这片红蓝交界的土地，相信它同样能抵达人心，抵达现实到不了的地方。</p>
+        <p class="src">这一段按现网「来路」原文。图片使用现网图注，不新写拍摄说明。</p>
+        <div class="photos">
+          <figure>
+            <img src="media/from-fubofilm/editorial/photo-lost-spirit.webp" alt="2021《遗落的神明》" width="1280" height="760">
+            <figcaption class="caption">2021《遗落的神明》</figcaption>
+          </figure>
+          <figure>
+            <img src="media/from-fubofilm/editorial/photo-village-rest.webp" alt="2018《闽南式乡愁》" width="850" height="900">
+            <figcaption class="caption">2018《闽南式乡愁》</figcaption>
+          </figure>
+          <figure>
+            <img src="media/from-fubofilm/editorial/photo-town-bridge.webp" alt="2013《城殇》" width="830" height="460">
+            <figcaption class="caption">2013《城殇》</figcaption>
+          </figure>
+          <figure>
+            <img src="media/from-fubofilm/editorial/photo-ferry-night.webp" alt="2015《桥》" width="1160" height="690">
+            <figcaption class="caption">2015《桥》</figcaption>
+          </figure>
+        </div>
+        <h3 style="margin-top:28px">《不在场的人》EP0</h3>
+        <p>现网称这些关键帧属于原创计划《不在场的人》EP0，并写着商业之外仍在打磨作者电影的母体。这里只放现网已公开的三张静帧，不补充剧情。</p>
+        <div class="works">
+          <figure class="work">
+            <img src="media/from-fubofilm/ep0/00-frost.webp" alt="不在场的人 EP0 frost" width="2560" height="1086">
+            <figcaption class="caption">不在场的人 EP0 frost</figcaption>
+          </figure>
+          <figure class="work">
+            <img src="media/from-fubofilm/ep0/02-school-route.webp" alt="不在场的人 EP0 school route" width="2560" height="1086">
+            <figcaption class="caption">不在场的人 EP0 school route</figcaption>
+          </figure>
+          <figure class="work">
+            <img src="media/from-fubofilm/ep0/06D-prague.webp" alt="不在场的人 EP0 prague" width="2560" height="1086">
+            <figcaption class="caption">不在场的人 EP0 prague</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section id="media">
+        <p class="kicker">MEDIA</p>
+        <h2>自媒体</h2>
+        <p>除了片场工作，也持续以 SOMEWHILE / 个人账号输出广告观察、幕后、器材与影像创作相关内容。现网把账号写成文字，没有给出可点击的主页地址，这里同样只保留账号名。</p>
+        <ul class="handles">
+          <li>微博：@DOP-傅博</li>
+          <li>BILIBILI：@三不五时SOMEWHILE</li>
+          <li>小红书：@傅博 @三不五时SOMEWHILE</li>
+          <li>YOUTUBE：@三不五时SOMEWHILE</li>
+          <li>Instagram：@fubofilm</li>
+        </ul>
+        <div class="media-grid">
+          <figure class="work">
+            <img src="media/from-fubofilm/editorial/media-apple-post.webp" alt="Shot on iPhone 14 Pro by Fu Bo" width="700" height="1360">
+            <figcaption class="caption">Shot on iPhone 14 Pro by Fu Bo · Commissioned by Apple</figcaption>
+          </figure>
+          <figure class="work">
+            <img src="media/from-fubofilm/editorial/media-bilibili-ocean.webp" alt="bilibili 2023 毕业歌《我们都拥有海洋》" width="1039" height="585">
+            <figcaption class="caption">bilibili × 吴青峰 · 2023 毕业歌《我们都拥有海洋》</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section id="cases">
+        <p class="kicker">CASEBOOK</p>
+        <h2>完整案例</h2>
+        <p>完整案例的阅读入口留着。本页不把现网案例库，也不把 2026-10-28 的 160 条导出，印成一份「最新全名单」。</p>
+        <p>本仓快照共 160 条。方向字段里数量最多的是「实拍与后期」103 条、「AI 相关作品」43 条；技术字段里「实拍」103 次、「AIGC生成」47 次。简历口径是 120 余支实拍、35 部 AIGC。数字对不上，所以都不作为成绩展示。</p>
+        <div class="actions">
+          <a class="button ghost" href="../../content/works.md">打开本仓作品索引（2026-10-28 快照）</a>
+          <a class="button ghost" href="../../content/handbook.md">打开本仓介绍手册</a>
+        </div>
+        <p class="src">索引入口需要从仓库根目录启动本地服务。索引里有龙抬头、泡泡玛特和追觅条目；按本轮范围，预览页不放这些卡片，也不新加追觅内容。</p>
+      </section>
+
+      <section id="archive">
+        <p class="kicker">ARCHIVE</p>
+        <h2>档案</h2>
+        <p>完整档案仍然可以读。下面三个入口都标明了它们是哪一版，不把它们叫做最新简历。</p>
+        <div class="doors">
+          <a class="door" href="https://www.fubofilm.cn/#archive" target="_blank" rel="noopener noreferrer">
+            <strong>现网档案</strong>
+            <span>www.fubofilm.cn 的静态页，文件时间 2026-06-18。页内有 99 项目、403 张可点开页图和 2025 PDF。只作既有公开阅读。</span>
+          </a>
+          <a class="door" href="../../content/works.md">
+            <strong>作品索引快照</strong>
+            <span>本仓 content/works.md，导出日期 2026-10-28，160 条。不是简历口径的最新统计。</span>
+          </a>
+          <a class="door" href="https://github.com/fubofilm-spec/about-fubo/releases/tag/v2025.11.19" target="_blank" rel="noopener noreferrer">
+            <strong>2025-11-19 PDF</strong>
+            <span>本仓 Release v2025.11.19。版本写在标题上，避免被看成待替换的最新简历。</span>
+          </a>
+        </div>
+        <aside class="wait">
+          <h3>这一版拿掉的现网问题</h3>
+          <ul>
+            <li>不放现网「完整 Keynote」那个 file 链接。它指向一台电脑桌面上的 Keynote，换一台设备打不开。</li>
+            <li>不放现网 Founder Reel 的相对路径。</li>
+            <li>不把 403 张履历页图嵌进本预览。</li>
+          </ul>
+        </aside>
+      </section>
+
+      <section id="contact">
+        <p class="kicker">CONTACT</p>
+        <h2>联系</h2>
+        <p>广告导演 / 摄影指导 / VGENT / FOPTIC。新的命题、品牌项目、作者片合作，都可以从一个真实问题开始。</p>
+        <p class="src">这句话来自现网联系段。现网写「微信 · 邮件联系后提供」，这里不补微信号。</p>
+        <div class="actions">
+          <a class="button" href="mailto:fubofilm@gmail.com">fubofilm@gmail.com</a>
+          <a class="button ghost" href="https://vgent.somewhile.cn" target="_blank" rel="noopener noreferrer">VGENT 站点</a>
+        </div>
+      </section>
+
+      <footer>
+        <p>preview/site-v2 · 本地结构预览。图片来自现网公开文件（2026-11-07 抓取）和本仓已有精选封面。没有生成图，没有改动 docs/，也不会因此更新 fubofilm.cn。</p>
+      </footer>
+    </div>
+  </div>
+</div>
+<script>
+(function () {
+  var menu = document.querySelector(".menu");
+  var rail = document.getElementById("rail");
+  var closeBtn = rail.querySelector(".rail-close");
+  function setOpen(open) {
+    rail.classList.toggle("open", open);
+    document.body.classList.toggle("lock", open);
+    menu.setAttribute("aria-expanded", open ? "true" : "false");
+  }
+  menu.addEventListener("click", function () {
+    setOpen(menu.getAttribute("aria-expanded") !== "true");
+  });
+  closeBtn.addEventListener("click", function () { setOpen(false); });
+  rail.querySelectorAll("a").forEach(function (link) {
+    link.addEventListener("click", function (event) {
+      var id = link.getAttribute("href") || "";
+      var target = id.charAt(0) === "#" ? document.querySelector(id) : null;
+      setOpen(false);
+      if (!target) return;
+      event.preventDefault();
+      var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      target.scrollIntoView({behavior: reduce ? "auto" : "smooth", block: "start"});
+      history.pushState(null, "", id);
+    });
+  });
+  document.addEventListener("keydown", function (event) {
+    if (event.key === "Escape") setOpen(false);
+  });
+})();
+</script>
+</body>
+</html>
